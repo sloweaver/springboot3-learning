@@ -1,0 +1,24 @@
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+server:
+  port: 8080
+  address: localhost
+logging:
+  pattern:
+    dateformat: yyyy/MM/dd HH:mm:ss
+  level:
+    com.example.demo.controller: debug
+    root: info
+  file:
+    name: application.log
+  logback:
+    rollingpolicy:
+      max-file-size: 1MB
+      file-name-pattern: 'application-%d{yyyy-MM-dd}.%i.log'
