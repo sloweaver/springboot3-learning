@@ -7,6 +7,13 @@ spring:
   servlet:
     multipart:
       max-file-size: 10MB
+  web:
+    resources:
+      cache:
+        cache control:
+          max-age: 7200
+        use-last-modified: true
+
 server:
   port: 8080
   address: localhost
